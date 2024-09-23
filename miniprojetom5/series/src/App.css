@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  background-color: #1dc0e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300vh;
+}
+
+.App {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 1000px;
+}
+
+h1 {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.card-contein {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 40px;
+  padding: 20px;
+}
+
+@media (max-width: 732px) {
+  h1 {
+    font-size: 1rem;
+}
+.card-contein {
+  grid-template-columns: 1fr 2fr;
+ }
+}
+
+@media (max-width: 550px) {
+  .card-container {
+    grid-template-columns: 2fr;
+  }
+}
+
